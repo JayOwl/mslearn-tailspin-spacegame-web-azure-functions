@@ -11,8 +11,10 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
+      name: MVCLocalPool
       vmImage: 'ubuntu-18.04'
       demands:
+      - agent.name -equals MvsAgent01
       - npm
 
     variables:
