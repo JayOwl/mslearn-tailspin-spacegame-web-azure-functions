@@ -1,10 +1,5 @@
 trigger:
 - '*'
-pool:
-  name: MVCLocalPool
-  demands:
-  - agent.name -equals MvsAgent01
-  - npm
 
 variables:
   buildConfiguration: 'Release'
